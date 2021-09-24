@@ -1,0 +1,41 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+
+a{ display:block; text-decoration: none; color:#333; }
+
+li { list-style: none;}
+
+img{ width:100%; display:block; pointer-events : none; }
+
+body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);*/ -webkit-touch-callout:none; }
+
+
+/*.wrapper*/
+
+.wrapper {width:80%; max-width:1400px; padding-top:140px; margin:0 auto;  }
+
+.wrapper .pagetit { text-align: center; }
+
+.content .content_wrap { width:100%; margin-top:5rem; }
+
+.intro_txt { width:40%; min-width:450px; max-width:450px; margin:0 auto; margin-top:5rem; line-height: 2;}
+
+@media screen and (max-width:1450px) {
+  
+.wrapper { width:100%; padding:0 30px; padding-top:110px; }
+  
+
+}
+
+@media screen and (max-width:750px) {
+
+.intro_txt {width:90%; min-width:inherit; max-width:inherit; }
+    
+}
+
+
+
+
+   
+  
+  
+  
