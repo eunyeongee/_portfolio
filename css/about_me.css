@@ -45,6 +45,10 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 .explan_txt .list_wrap .list { padding-bottom:5px; }
 
+.explan_txt .list_wrap .list .linkto { display:inline; }
+
+.explan_txt .list_wrap .list .linkto:hover { color:blue; }
+
 .horizontal {display:flex; align-items: center;  }
 
 .icons .list {font-size:2em; margin-right: 8px; }
