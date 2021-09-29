@@ -104,6 +104,15 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
     
     .m_margin {margin-top:2.5rem; }
     
+    .name_wrap .ko_name {width:100%; }
+    
+    .name_wrap {  flex-direction: column;  font-size:1.5em;}
+    
+    .name_wrap .name {}
+    
+    
+    
+    
     
     
 }
@@ -113,4 +122,6 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
     .explan_box .photo .img { width:100%; height:350px;}
 
     .explan_txt .list_wrap .list { padding-bottom:5px; white-space: inherit; }
+    
+    
 }

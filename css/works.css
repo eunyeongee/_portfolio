@@ -29,7 +29,7 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 .works_box .work_wrap { width:100%; display: -ms-flexbox; display: flex; flex:auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.works_box .work_wrap .work_list { width: 32%; margin:0 15px; margin-bottom:20px; border-radius: 20px; transition:all 0.35s; }
+.works_box .work_wrap .work_list { width: 32%; margin:0 15px; margin-bottom:1.5rem; border-radius: 20px; transition:all 0.35s; }
 
 .works_box .work_wrap .work_list > a { padding: 20px; }
 
@@ -52,7 +52,7 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
     
     .wrapper .pagetit {position:relative; top:0; right:0; transform: rotate(0deg); }
     
-    #tab_btn { position:relative; width:100%; top:0; right:0; display:flex; justify-content: center; }
+    #tab_btn {  position:relative; width:100%; top:0; right:0; /*display:flex;*/ justify-content: center; }
     
     .tab_btn_wrap { display:flex;}
     
@@ -73,7 +73,7 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 @media screen and (max-width:780px) {
     
-    .works_box .work_wrap .work_list { width: 100%; margin:0; }
+    .works_box .work_wrap .work_list { width: 100%; margin:0 0 1.5rem 0; }
     
 }
 
