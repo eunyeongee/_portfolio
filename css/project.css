@@ -16,9 +16,7 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 .wrapper {width:80%; max-width:1400px; padding-top:140px; margin:0 auto;  }
 
-.wrapper .pagetit { text-align: center; }
-
-.content .content_wrap { width:100%; margin-top:5rem; }
+.wrapper .pagetit {position:fixed; top:180px; right:40px; transform: rotate(-90deg); text-align: center; }
 
 /*-----공통 css------*/
 
@@ -31,8 +29,6 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 .project_item .i_wrap img { filter: grayscale(30); }
 
 .project_item:hover .i_wrap img { filter: grayscale(0); }
-
-
 
 .more_btn { opacity:0; position:absolute; width:30%; min-width:120px;  height:50px; background-color:#000; color:#fff; top:50%; left:50%; transform: translate(-50%,-50%); border-radius: 25px; transition:all 0.35s;}
 
@@ -47,17 +43,24 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 @media screen and (max-width:1450px) {
   
-.wrapper { width:100%; padding:0 30px; padding-top:110px; }
+    .wrapper { width:100%; padding:0 30px; padding-top:110px; }
+    
+    .wrapper .pagetit {position:relative; top:0; right:0; transform: rotate(0deg); }
+    
+    .content .content_wrap { width:100%; margin-top:3rem; }
+
 
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:780px) {
     
     .content .content_wrap { margin-top:2.5rem; }
     
     .project_item .i_wrap img { filter: grayscale(0); }
     
     .project_inner .project_item { flex-basis: 100%; margin-top:1rem; }
+    
+
     
 
 

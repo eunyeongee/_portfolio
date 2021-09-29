@@ -125,7 +125,9 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 }
 
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:780px) {
+    
+    .nav_wrap .nav_inner01 .menu_item { font-size:1.5em; }
     
     
     .header_wrap .header_inner .logo a { font-size:0.8em; }
