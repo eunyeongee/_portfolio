@@ -36,13 +36,14 @@ $(function () {
 
     });
     
-    var menu = $('.nav_wrap > .nav_inner01 > .menu_item');
+    /*var menu = $('.nav_wrap > .nav_inner01 > .menu_item');
     
     if( $("body").hasClass("project_wrap") === true ){
        
        menu.eq(0).find('a').addClass('page');
     
-       }
+       }*/
+
     
     
 
