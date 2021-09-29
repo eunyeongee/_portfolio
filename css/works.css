@@ -21,7 +21,7 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 /*-----공통 css------*/
 
-#tab_btn { position:fixed; width:100px; top:260px; right:60px;  }
+#tab_btn { position:fixed; width:100px; top:260px; right:60px;  display:none; }
 
 .tab_btn_list {padding:8px; border-top: 1px #000 solid; }
 
@@ -29,16 +29,20 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 .works_box .work_wrap { width:100%; display: -ms-flexbox; display: flex; flex:auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.works_box .work_wrap .work_list { width: 33%; margin:0 10px;  padding-bottom: 30px; }
+.works_box .work_wrap .work_list { width: 32%; margin:0 15px; margin-bottom:20px; border-radius: 20px; transition:all 0.35s; }
 
+.works_box .work_wrap .work_list > a { padding: 20px; }
+
+
+.works_box .work_wrap .work_list:hover { box-shadow: 0 0 5px 5px rgba(3,3,3,0.1); }
+
+.works_box .work_wrap .work_list:hover .txt { font-weight: bold;  }
 
 .works_box .work_wrap .work_list .txt { margin-top:2rem; text-indent: 10px;  }
 
-.works_box .work_wrap .work_list .txt .more_btn {position:relative; margin-top:1rem; }
+.works_box .work_wrap .work_list .txt .more_btn { margin-top:1rem; }
 
-.works_box .work_wrap .work_list .txt .more_btn > a { display:inline; }
-
-.works_box .work_wrap .work_list .txt .more_btn a:after { font-family:xeicon; content: "\e90b";   }
+.works_box .work_wrap .work_list .txt .more_btn:after { font-family:xeicon; content: "\e90b"; margin-left:5px;  }
 
 
 
