@@ -1,34 +1,17 @@
 *{margin:0; padding:0; box-sizing:border-box;}
-
 a{ display:block; text-decoration: none; color:#333; }
-
 li { list-style: none;}
-
 img{ width:100%; }
-
 body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);*/ }
 
 #footer { padding-top:8rem; color:#e9e9e9; }
-
 #footer .footer_wrap { background:#333; padding:60px;}
-
 #footer .txt { text-align: center;}
-
 #footer .txt .footer_txt {margin-top:2.5rem;}
-
 #footer .txt .copyright {margin-top:0;}
 
-
 @media screen and (max-width:1450px) {
-  
-#footer .footer_wrap { padding:60px 30px; }
-
-}
-
-@media screen and (max-width:780px) {
-
-
-    
+    #footer .footer_wrap { padding:60px 30px; }
 }
 
 

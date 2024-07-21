@@ -9,59 +9,35 @@ img{ width:100%; }
 body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);*/ }
 
 /*header*/
-
 #header {position:fixed; width:100%; height:130px; padding-top:50px; background:rgba(255,255,255,0.8); z-index: 10; }
-
 .header_wrap {width:100%; padding:0 60px;}
-
 .header_wrap .header_inner { position:relative;  width:100%; }
-
 .header_wrap .header_inner .logo { position:absolute; top:0; left:0; font-size:1.3em; font-weight: normal; z-index: 9; }
-
 .header_wrap .header_inner .logo a { position:relative; }
 
 .menu_txt_wrap {position:relative; }
-
 .menu_txt_wrap .menu_txt {position:absolute; top:15px; left:-50px; }
-
 .menu_txt_wrap .menu_txt.open {opacity:1; transition:all 0.35s;}
-
 .menu_txt_wrap .menu_txt.close {opacity:0; transition:all 0.35s; }
-
 .menu_txt_wrap.on .menu_txt.open {opacity:0;}
-
 .menu_txt_wrap.on .menu_txt.close {opacity:1;}
 
 
-
-
 /* 메뉴 버튼 */
-
 .btn_wrap {position:absolute; top:0; right:0; z-index: 9;}
-
 .menu_btn {position: relative; width:60px; height:60px; border:1px #333 solid;}
-
 .menu_btn.active { background:#333; }
-
 .menu-btn-animate,
 .menu-btn-animate span { display: inline-block; transition: all .4s; box-sizing: border-box;}
-  
 .menu-btn-animate { position: absolute; top:0; left:0; bottom:0; right:0; width: 20px; height: 17px; margin:auto; }
-
 .menu-btn-animate span { position: absolute; left: 0;width: 100%; height: 3px; background-color: #333;}
-  
 .menu-btn-animate span:nth-of-type(1) {top: 0; }
-  
 .menu-btn-animate span:nth-of-type(2) {top: 7px;}
-  
 .menu-btn-animate span:nth-of-type(3) { bottom: 0; }
 
 /* menu-btn-animate */
-
 /* 중앙 라인이 밖으로 빠지면서 상하라인 엑스자 만들기 */
-
 .menu-btn-animate.active span { background:#fff;}
-
 .menu-btn-animate.active span:nth-of-type(1) {
     -webkit-transform : translateY(7px) rotate(-45deg);
     transform : translateY(7px) rotate(-45deg);
@@ -89,59 +65,32 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 
 /* nav */
 #menu_bg {position:fixed; display:none; top:0; left:0; right:0; bottom:0; width:100%; height:100%; background:rgba(3,3,3,0.5); }
-
 #nav {position:fixed; opacity: 0; top: 0 ; right:-420px; width:420px; height:100%; background:#fff;  padding:60px; transition:all 0.35s; }
-
 #nav.open_menu { opacity: 1; right:0;  }
-
-
 #nav .nav_wrap { width:100%; height:100%; display:flex; flex-direction: column; justify-content: center;}
-
 .nav_wrap .menu { width:100%; }
-
 .nav_wrap .nav_inner01 .menu_item { font-size:2em; }
-
 .nav_wrap .nav_inner01 .menu_item a {padding:5px 0;}
-
 .nav_wrap .nav_inner01 .menu_item a.page:before {content:"\e907"; font-family: xeicon; font-weight: normal; }
-
 .nav_wrap .nav_inner01 .menu_item a:hover { font-weight: bold; }
-
 .nav_wrap .nav_inner02 { display:flex; margin-top:60px; }
-
 .nav_wrap .nav_inner02 .menu_item {margin-right:12px;}
-
 .nav_wrap .nav_inner02 .menu_item a {font-size:2.5em; color:rgba(3 ,3, 3, 0.3); }
-
 .nav_wrap .nav_inner02 .menu_item a:hover { color:#333; }
 
 
 @media screen and (max-width:1450px) {
-    
   #header {  height:100px; padding-top:17px; }
-  
   .header_wrap { padding:0 30px;  }
-
 }
 
 
 @media screen and (max-width:780px) {
     
     .nav_wrap .nav_inner01 .menu_item { font-size:1.5em; }
-    
-    
     .header_wrap .header_inner .logo a { font-size:0.8em; }
-    
     .menu_txt_wrap { display:none; }
-    
     .menu_btn {border:0; width:35px; height:35px;}
-    
     #nav { right:-100%; width:100%; background:rgba(255,255,255,0.9); }
-    
-    #menu_bg {opacity: 0;}
-    
-  
-
-
-    
+    #menu_bg {opacity: 0;}   
 }
