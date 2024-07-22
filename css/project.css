@@ -8,9 +8,11 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 .wrapper {width:80%; max-width:1400px; padding-top:140px; margin:0 auto;  }
 .wrapper .pagetit {position:fixed; top:180px; right:40px; transform: rotate(-90deg); text-align: center; }
 /*-----공통 css------*/
+.nav_wrap .nav_inner01 .menu_item:first-child a {font-weight: bold;}
 .project_wrap .project_inner {width:100%; display:flex; flex-wrap: wrap; }
 .project_inner .project_item { position:relative; flex-basis: 50%; }
 .project_inner .project_item .sub_tit {position:absolute; top:30px; left:30px; color:#fff;}
+.project_inner .project_item .sub_tit.black {color:#000;}
 .project_item .i_wrap img { filter: grayscale(30); }
 .project_item:hover .i_wrap img { filter: grayscale(0); }
 .more_btn { opacity:0; position:absolute; width:30%; min-width:120px;  height:50px; background-color:#000; color:#fff; top:50%; left:50%; transform: translate(-50%,-50%); border-radius: 25px; transition:all 0.35s;}
