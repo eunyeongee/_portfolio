@@ -21,8 +21,8 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 .work_con {display:none;}
 .work_con.active { display:block;}
 .works_box {margin-top:50px;}
-.works_box .work_wrap { width:100%; /*display: -ms-flexbox; display: flex; flex:auto; -ms-flex-wrap: wrap; flex-wrap: wrap;*/ font-size:0; }
-.works_box .work_wrap .work_list { display:inline-block; width: 31%; margin:0 10px; margin-bottom:1.5rem; border-radius: 20px; transition:all 0.35s; clear:both;}
+.works_box .work_wrap { width:100%; display: -ms-flexbox; display: flex; flex:auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.works_box .work_wrap .work_list { display:inline-block; flex-basis:calc(31% - 20px ); margin:0 10px; margin-bottom:1.5rem; border-radius: 20px; transition:all 0.35s; clear:both;}
 .works_box .work_wrap .work_list > a { padding: 20px; }
 .works_box .work_wrap .work_list:hover { box-shadow: 1px 1px 3px 5px rgba(3,3,3,0.1); }
 .works_box .work_wrap .work_list:hover .txt { font-weight: bold;  }
