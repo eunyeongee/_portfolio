@@ -8,20 +8,26 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 .wrapper {width:80%; max-width:1400px; padding-top:140px; margin:0 auto;  }
 .wrapper .pagetit {position:fixed; top:180px; right:40px; transform: rotate(-90deg); text-align: center; }
 /*-----공통 css------*/
-.nav_wrap .nav_inner01 .menu_item:last-child a {font-weight: bold;}
+.nav_wrap .nav_inner01 .menu_item:nth-child(2) a {font-weight: bold;}
 #tab_btn {margin: 0 auto;width: 25%;}
 .tab_btn_wrap {width:100%; font-size:0; }
 .tab_btn_list {position:relative;  display: inline-block; text-align: center; width: 50%; padding:8px;font-size: 16px;}
+.tab_btn_list a {position:relative; display:inline-block !important;}
+.tab_btn_list > a:after{ position:absolute; content: ""; display:block; width: 0; height: 70%; bottom: 0; left: 0; background-color: #58ACFA; z-index: -1; opacity: 0.7; transition: width 0.75s;}
+.tab_btn_list.active a:after,.tab_btn_list > a:hover:after{width: 100%;}
 .tab_btn_list:before {display:block; content: ""; position:absolute; width:1px; height:50%; background:#000; top:50%; left:0; transform:translateY(-50%); }
 .tab_btn_list:first-child:before {content: none; }
+
+.work_con {display:none;}
+.work_con.active { display:block;}
 .works_box {margin-top:50px;}
-.works_box .work_wrap { width:100%; display: -ms-flexbox; display: flex; flex:auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.works_box .work_wrap .work_list { width: 32%; margin:0 15px; margin-bottom:1.5rem; border-radius: 20px; transition:all 0.35s; }
+.works_box .work_wrap { width:100%; /*display: -ms-flexbox; display: flex; flex:auto; -ms-flex-wrap: wrap; flex-wrap: wrap;*/ font-size:0; }
+.works_box .work_wrap .work_list { display:inline-block; width: 31%; margin:0 10px; margin-bottom:1.5rem; border-radius: 20px; transition:all 0.35s; clear:both;}
 .works_box .work_wrap .work_list > a { padding: 20px; }
-.works_box .work_wrap .work_list:hover { box-shadow: 0 0 5px 5px rgba(3,3,3,0.1); }
+.works_box .work_wrap .work_list:hover { box-shadow: 1px 1px 3px 5px rgba(3,3,3,0.1); }
 .works_box .work_wrap .work_list:hover .txt { font-weight: bold;  }
-.works_box .work_wrap .work_list .txt { margin-top:2rem; text-indent: 10px;  }
-.works_box .work_wrap .work_list .txt .more_btn { margin-top:1rem; }
+.works_box .work_wrap .work_list .txt { margin-top:2rem; text-indent: 10px; font-size: 16px;}
+.works_box .work_wrap .work_list .txt .more_btn { margin-top:1rem; font-size: 15px;}
 .works_box .work_wrap .work_list .txt .more_btn:after { font-family:xeicon; content: "\e90b"; margin-left:5px;  }
 @media screen and (max-width:1450px){
     .wrapper { width:100%; padding:0 30px; padding-top:110px; }

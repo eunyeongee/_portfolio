@@ -9,7 +9,7 @@ body { font-family: 'Noto Sans KR', sans-serif; /*background:rgb(239, 239, 239);
 .wrapper {width:80%; max-width:1400px; padding-top:140px; margin:0 auto;  }
 .wrapper .pagetit {position:fixed; top:180px; right:40px; transform: rotate(-90deg); text-align: center; }
 /*-----공통 css------*/
-.nav_wrap .nav_inner01 .menu_item:nth-child(2) a {font-weight: bold;}
+.nav_wrap .nav_inner01 .menu_item:last-child a {font-weight: bold;}
 .horizontal {display:flex; align-items: center;  }
 .margin { margin-top:2.5rem; }
 .name_wrap { display: flex; width:100%; font-size:1.7em; margin-top:5rem;  }
